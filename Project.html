@@ -9,17 +9,17 @@
     <div>
       <h1 class="heading">404 NOT FOUND</h1>
     </div>
-    <div class="flex">
-      <div>
+    <div class="flex-container">
+      <div class="flex-item">
         <img
           class="image"
           src="Scarecrow.png"
           alt="Scarecrow"
-          width=" 277.333px"
-          height=" 230.031px"
+          width="277.333px"
+          height="230.031px"
         />
       </div>
-      <div>
+      <div class="flex-item">
         <h1 class="bold">I have bad news for you</h1>
         <p class="paragraph">
           The page you are looking for might be removed or is temporarily
@@ -89,8 +89,12 @@
     line-height: normal;
   }
 
-  .flex{
-    flex: 1;
+  .flex-container {
+    display: flex;
     flex-direction: row;
+  }
+
+  .flex-item {
+    flex: 1;
   }
 </style>
