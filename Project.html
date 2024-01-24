@@ -6,20 +6,28 @@
     <title>404 - Page not found</title>
   </head>
   <body>
-    <h1 class="heading">404 NOT FOUND</h1>
-    <img
-      class="image"
-      src="Scarecrow.png"
-      alt="Scarecrow"
-      width=" 277.333px"
-      height=" 230.031px"
-    />
-    <h1 class="bold">I have bad news for you</h1>
-    <p class="paragraph">
-      The page you are looking for might be removed or is temporarily
-      unavailable
-      <button class="backtohomepage-button">BACK TO HOMEPAGE</button>
-    </p>
+    <div>
+      <h1 class="heading">404 NOT FOUND</h1>
+    </div>
+    <div class="flex">
+      <div>
+        <img
+          class="image"
+          src="Scarecrow.png"
+          alt="Scarecrow"
+          width=" 277.333px"
+          height=" 230.031px"
+        />
+      </div>
+      <div>
+        <h1 class="bold">I have bad news for you</h1>
+        <p class="paragraph">
+          The page you are looking for might be removed or is temporarily
+          unavailable
+          <button class="backtohomepage-button">BACK TO HOMEPAGE</button>
+        </p>
+      </div>
+    </div>
   </body>
 </html>
 
@@ -79,5 +87,9 @@
     font-weight: 700;
     letter-spacing: normal;
     line-height: normal;
+  }
+
+  .flex{
+    flex: 1;
   }
 </style>
