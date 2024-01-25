@@ -6,20 +6,22 @@
     <title>404 - Page not found</title>
   </head>
   <body>
-    <h1 class="heading">404 NOT FOUND</h1>
-    <img
-      class="image"
-      src="Scarecrow.png"
-      alt="Scarecrow"
-      width=" 277.333px"
-      height=" 230.031px"
-    />
-    <h1 class="bold">I have bad news for you</h1>
-    <p class="paragraph">
-      The page you are looking for might be removed or is temporarily
-      unavailable
-      <button class="backtohomepage-button">BACK TO HOMEPAGE</button>
-    </p>
+    <div>
+      <h1 class="heading">404 NOT FOUND</h1>
+    </div>
+    <div class="flex-container">
+      <div class="flex-item">
+        <img class="image" src="Scarecrow.png" alt="Scarecrow" />
+      </div>
+      <div class="flex-item">
+        <h1 class="bold">I have bad news for you</h1>
+        <p class="paragraph">
+          The page you are looking for might be removed or is temporarily
+          unavailable
+          <button class="backtohomepage-button">BACK TO HOMEPAGE</button>
+        </p>
+      </div>
+    </div>
   </body>
 </html>
 
@@ -37,20 +39,17 @@
     text-align: left;
   }
 
-  .image {
+  /* .image {
     padding-left: 80px;
-  }
+    max-width: 100%;
+  } */
 
   .bold {
-    font-size: 60px;
-    font-weight: 700;
-    font-family: monospace;
-    color: rgb(51, 51, 51);
+    font-size: 65px;
     padding-right: 50px;
     line-height: 100px;
-    width: 346.667px;
-    height: 400px;
-    margin-top: 0;
+    color: #333;
+    font-family: monospace;
   }
 
   .paragraph {
@@ -79,5 +78,18 @@
     font-weight: 700;
     letter-spacing: normal;
     line-height: normal;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex-item {
+    flex: 1;
+    min-width: 300px;
+  }
+  .flex-item img {
+    max-width: 80%;
   }
 </style>
